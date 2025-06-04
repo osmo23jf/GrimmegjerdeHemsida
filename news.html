@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grimmegjerde</title>
+    <title>Senaste Nytt – Grimmegjerde</title>
     <link rel="stylesheet" href="/GrimmegjerdeHemsida/css/style.css" />
     <script defer src="/GrimmegjerdeHemsida/javascript/news.js"></script>
     <link
@@ -42,83 +42,50 @@
           <img src="/GrimmegjerdeHemsida/img/logo.png" />
         </div>
       </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="/GrimmegjerdeHemsida/miljösmart.html">Miljösmart</a></li>
-          <li class="dropdown">
-            <a href="" class="dropbtn">Husmodeller</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="/GrimmegjerdeHemsida/villa-lillabo.html"
-                  >Villa Lillabo</a
-                >
-              </li>
-              <li>
-                <a href="/GrimmegjerdeHemsida/villa-storabo.html"
-                  >Villa Storabo</a
-                >
-              </li>
-              <li>
-                <a href="/GrimmegjerdeHemsida/villa-vibo.html">Villa Vibo</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/GrimmegjerdeHemsida/hurgårdettill.html"
-              >Hur går det till</a
-            >
-          </li>
-          <li><a href="/GrimmegjerdeHemsida/aboutus.html">Om oss</a></li>
-          <li><a href="/GrimmegjerdeHemsida/contact.html">Kontakta oss</a></li>
-          <li>
-            <a
-              href="https://www.facebook.com/people/Grimmegjerde-AB/61564437132496/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/grimmegjerde?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-        <button class="menu-toggle">☰</button>
-      </nav>
     </header>
 
     <section class="news-hero">
-      <h1>Senaste nytt</h1>
+      <h1>Senaste Nytt</h1>
       <p>
         Här hittar du uppdateringar, lanseringar och nyheter från Grimmegjerde.
       </p>
     </section>
 
-    <var>
-      <section class="news-form-section">
-        <button class="toggle-form-btn">+ Lägg till nyhet</button>
+    <section class="news-form-section">
+      <button class="toggle-form-btn">+ Lägg till nyhet</button>
+      <form id="newsForm" class="news-form" style="display: none">
+        <input type="text" id="newsTitle" placeholder="Rubrik" required />
+        <input type="date" id="newsDate" required />
+        <textarea
+          id="newsContent"
+          placeholder="Nyhetsinnehåll"
+          required
+        ></textarea>
+        <button type="submit">Publicera</button>
+      </form>
+    </section>
 
-        <form id="newsForm" class="news-form" style="display: none">
-          <input type="text" id="newsTitle" placeholder="Rubrik" required />
-          <input type="date" id="newsDate" required />
-          <textarea
-            id="newsContent"
-            placeholder="Nyhetsinnehåll"
-            required
-          ></textarea>
-          <button type="submit">Publicera</button>
-        </form>
-      </section></var
-    >
+    <section class="news-container"></section>
 
     <footer>
-      <!-- reuse your existing footer -->
+      <h2>Kontakt: info@grimmegjerde.com | Telefon: +46 07 21 599 199</h2>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/people/Grimmegjerde-AB/61564437132496/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/grimmegjerde"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+      <h2>&copy; 2025 Grimmegjerde AB</h2>
     </footer>
   </body>
 </html>

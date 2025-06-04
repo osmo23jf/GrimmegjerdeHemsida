@@ -1896,3 +1896,43 @@ footer h2 {
 .delete-btn:hover {
   background-color: #c0392b;
 }
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.news-post {
+  background-color: #fffdf4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.news-post h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #693939;
+}
+
+.news-post .news-date {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.news-post p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
