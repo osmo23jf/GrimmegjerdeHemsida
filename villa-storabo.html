@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Storabo - Grimmegjerde AB</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/javascript/server.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <div class="logo">
+          <img src="img/logo.png" />
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/miljösmart.html">Miljösmart</a></li>
+          <li class="dropdown">
+            <a href="" class="dropbtn">Husmodeller</a>
+            <ul class="dropdown-content">
+              <li><a href="/villa-lillabo.html">Villa Lillabo</a></li>
+              <li><a href="/villa-storabo.html">Villa Storabo</a></li>
+              <li><a href="/villa-vibo.html">Villa Vibo</a></li>
+            </ul>
+          </li>
+          <li><a href="/hurgårdettill.html">Hur går det till</a></li>
+          <li><a href="/aboutus.html">Om oss</a></li>
+          <li><a href="/contact.html">Kontakta oss</a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/people/Grimmegjerde-AB/61564437132496/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/grimmegjerde?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </header>
+
+    <section class="house-hero">
+      <img src="/img/Villa Storabo.jpeg" alt="Villa Storabo" />
+      <div class="hero-text">
+        <h1>Villa Storabo</h1>
+        <h2>En större variant av Villa Lillabo</h2>
+      </div>
+    </section>
+
+    <div class="house-container">
+      <section class="house-info">
+        <h2>Om Villa Storabo</h2>
+        <p>
+          Villa Storabo är en uttökad variant av vår basmodell Villa Lillabo.
+          Planlösningen har liknande utformning som Villa Lillabo men är utökad
+          med två sovrum samt ytterligare en toalett. Med Villa Storabo får ni
+          en boyta på 110 kvadratmeter inomhus och 50 kvm vinterträdgård. Den
+          stora härliga takterassen finns förstås på det här alternativet också.
+          Med välplanerad och effektiv användning av husets kvadratmeter är det
+          här ett hem där de sociala ytorna är rejäla men det finns också
+          privatare ytor.
+        </p>
+        <div class="popup-buttons">
+          <button class="btn" onclick="openPopupStorabo('floorplan')">
+            Visa Planlösning
+          </button>
+          <button class="btn" onclick="openPopupStorabo('facade')">
+            Visa Fasadritning
+          </button>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="popup-storabo" class="popup-overlay">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopupStorabo()">&times;</span>
+            <img id="popup-img-storabo" src="" alt="Popup Image" />
+          </div>
+        </div>
+      </section>
+
+      <div class="house-gallery">
+        <img src="/img/Villa Storabo1.jpeg" alt="House Image 1" />
+        <img src="/img/Villa Storabo2.jpeg" alt="House Image 2" />
+        <img src="/img/Villa Storabo3.jpeg" alt="House Image 4" />
+        <img src="/img/Villa Storabo4.jpeg" alt="House Image 5" />
+      </div>
+    </div>
+
+    <section class="faq">
+      <h2>Vanliga Frågor (FAQ)</h2>
+      <div class="faq-item">
+        <h3>Vad ingår i paketet?</h3>
+        <p>
+          Allt material för att bygga huset med några undantag. Ytskikten på
+          insidan, såsom tapeter och färg, ingår inte.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Kan jag välja mitt eget kök?</h3>
+        <p>
+          Ja! Vi ger dig möjligheten att välja ett begagnat kök eller bygga ett
+          eget. Ett nytt kök kan ingå mot ett mindre tillägg.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Vad gäller om vi behöver hjälp under bygget?</h3>
+        <p>
+          Vi erbjuder support både på plats vid lämpliga tillfällen i
+          byggprocessen och via digitala möten.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <h2>Kontakt: info@grimmegjerde.com | Telefon: +46 07 21 599 199</h2>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/people/Grimmegjerde-AB/61564437132496/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/grimmegjerde?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+      <h2>&copy; 2025 Grimmegjerde AB</h2>
+    </footer>
+  </body>
+</html>
