@@ -646,11 +646,14 @@ nav {
 }
 
 .mission-statement {
-  padding: 30px 20px;
   margin: 70px auto 0;
-  max-width: 1000px;
-  border: 2px solid #693939;
-  box-sizing: border-box;
+  padding: 80px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-top: 4px solid #8c4c4c;
+  border-bottom: 4px solid #8c4c4c;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
   position: relative;
 }
 
