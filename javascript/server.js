@@ -62,10 +62,10 @@ function openPopup(type) {
   const popupImg = document.getElementById("popup-img");
 
   if (type === "floorplan") {
-    popupImg.src = "/img/villa lillabo planlösning.png";
+    popupImg.src = "/GrimmegjerdeHemsida/img/villa lillabo planlösning.png";
     popupImg.alt = "Planlösning Villa Lillabo";
   } else if (type === "facade") {
-    popupImg.src = "/img/villa lillabo fasadlösning.png";
+    popupImg.src = "/GrimmegjerdeHemsida/img/villa lillabo fasadlösning.png";
     popupImg.alt = "Fasadlösning Villa Lillabo";
   }
 
@@ -83,10 +83,10 @@ function openPopupStorabo(type) {
   const popupImg = document.getElementById("popup-img-storabo");
 
   if (type === "floorplan") {
-    popupImg.src = "/img/Villa Storabo fasad.jpeg.png";
+    popupImg.src = "/GrimmegjerdeHemsida/img/Villa Storabo fasad.jpeg.png";
     popupImg.alt = "Planlösning Villa Storabo";
   } else if (type === "facade") {
-    popupImg.src = "/img/villa storabo planlösning.png";
+    popupImg.src = "/GrimmegjerdeHemsida/img/villa storabo planlösning.png";
     popupImg.alt = "Fasadlösning Villa Storabo";
   }
 
@@ -109,18 +109,24 @@ function openPopupViboSpecific(type) {
   if (type === "floorplan") {
     imagesViboSpecific = [
       {
-        src: "/img/villa vibo planlösning.png",
+        src: "/GrimmegjerdeHemsida/img/villa vibo planlösning.png",
         alt: "Planlösning 1 Villa Vibo",
       },
       {
-        src: "/img/villa vibo planlösning2.png",
+        src: "/GrimmegjerdeHemsida/img/villa vibo planlösning2.png",
         alt: "Planlösning 2 Villa Vibo",
       },
     ];
   } else if (type === "facade") {
     imagesViboSpecific = [
-      { src: "/img/villa vibo fasad.png", alt: "Fasadritning 1 Villa Vibo" },
-      { src: "/img/villa vibo fasad2.png", alt: "Fasadritning 2 Villa Vibo" },
+      {
+        src: "/GrimmegjerdeHemsida/img/villa vibo fasad.png",
+        alt: "Fasadritning 1 Villa Vibo",
+      },
+      {
+        src: "/GrimmegjerdeHemsida/img/villa vibo fasad2.png",
+        alt: "Fasadritning 2 Villa Vibo",
+      },
     ];
   }
 
