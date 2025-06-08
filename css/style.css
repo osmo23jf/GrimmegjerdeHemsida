@@ -448,6 +448,7 @@ nav {
   }
 }
 
+/* --- Base Styles --- */
 .steps-section {
   text-align: center;
   padding: 80px 120px;
@@ -464,22 +465,6 @@ nav {
 .steps-section h2 {
   font-size: 1.8rem;
   color: #693939;
-}
-
-@media (max-width: 768px) {
-  .steps-section {
-    padding: 40px 20px;
-    margin-top: 40px;
-  }
-
-  .steps-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .steps-section h3 {
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
 }
 
 .process-section {
@@ -591,6 +576,89 @@ nav {
 
 .process-next {
   right: 10px;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .steps-section {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+  .steps-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .steps-section h3 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .process-section {
+    padding: 20px 10px 60px 10px;
+  }
+
+  .image-wrapper img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .step-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 0.8rem;
+  }
+
+  .step-label {
+    font-size: 0.7rem;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .process-step p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .process-btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .step-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-number {
+    font-size: 1.2rem;
+  }
+
+  .step-label {
+    font-size: 0.6rem;
+  }
+
+  .step-title {
+    font-size: 0.9rem;
+  }
+
+  .process-step p {
+    font-size: 0.95rem;
+  }
 }
 
 .portfolio,
